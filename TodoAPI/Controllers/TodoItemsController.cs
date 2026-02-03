@@ -20,9 +20,11 @@ namespace TodoAPI.Controllers
             _context = context;
              if (_context.TodoItems.Count() == 0)
                  {
+                 //this is just for commit
                    _context.TodoItems.Add(new TodoItem { Name = "Lab1", IsComplete = true });
                    _context.TodoItems.Add(new TodoItem { Name = "Lab2", IsComplete = false });
                    _context.TodoItems.Add(new TodoItem { Name = "quiz#2", IsComplete = false });
+
                    
                  }
 
